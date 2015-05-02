@@ -1,4 +1,75 @@
 header#header
-  +link('Logo', 'index.html').logo
-  nav
-    +nav([{title: 'Home', href: 'index.html'}, {title: 'Layer', href: 'template-layer.html'}, {title: 'Sprite', href: 'template-sprite.html'}, {title: 'Style Guide', href: 'template-style-guide.html'}, {title: 'Sitemap', href: 'sitemap.html'}])
+  .container
+    #logo 
+      .logo-wrapper
+        +img('az tin tức logo', 'images/default/logo.png')
+    +user-brief
+    #main-nav-container
+      .nav-wrapper
+        +nav([
+          {
+            title: 'Xã hội', 
+            href:'/xa-hoi', 
+            itemsMenu: [
+              {title: 'Đời sống', href:'/doi-song'},
+              {title: 'Sức khỏe', href:'/suc-khoe'},
+              {title: 'Nhà ở', href:'/nha-o'}
+            ]
+          },
+          {
+            title: 'Thế giới',
+            href:'/the-gioi',
+          },
+          {
+            title: 'Kinh tế', 
+            href:'/kinh-te',
+            itemsMenu: [
+              {title: 'Thị trường', href:'/doi-song'},
+              {title: 'Tài chính', href:'/suc-khoe'},
+              {title: 'Ngân hàng', href:'/nha-o'}
+            ]
+          },
+          {
+            title: 'Thể thao', 
+            href:'/the-thao',
+            itemsMenu: [
+              {title: 'Trong nước', href:'/doi-song'},
+              {title: 'Quốc tế', href:'/suc-khoe'}
+            ]
+          },
+          {
+            title: 'Pháp luật',
+            href:'/phap-luat',
+            itemsMenu: [
+              {title: 'Vụ án', href:'/doi-song'},
+              {title: 'Luật', href:'/suc-khoe'}
+            ]
+          },
+          {
+            title: 'Sách', 
+            href:'/sach',
+            itemsMenu: [
+              {title: 'Sách hay', href:'/doi-song'},
+              {title: 'Tác giả', href:'/suc-khoe'}
+            ]
+          },
+          {
+            title: 'Công nghệ', 
+            href:'/cong-nghe',
+            itemsMenu: [
+              {title: 'Điện thoại', href:'/doi-song'},
+              {title: 'Máy tính', href:'/suc-khoe'},
+              {title: 'Máy tính bảng', href:'/suc-khoe'}
+            ]
+          },
+          {title: 'Giáo dục', href:'/giao-duc'},{title: 'Tâm lý', href:'/tam-ly'},
+          {
+            title: 'Giải trí', 
+            href:'/giai-tri',
+            itemsMenu: [
+              {title: 'Sao', href:'/doi-song'},
+              {title: 'Làm đẹp', href:'/suc-khoe'},
+              {title: 'Phim ảnh', href:'/suc-khoe'}
+            ]
+          }
+        ])
